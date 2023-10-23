@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 12px;
+            text-align: left;
+            margin: 0;
+        }
+        h2 {
+            color: green;
+            text-align: center;
+            font-size: 34px;
+            margin: 10px 0;
+            display: block;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .gray-box {
+            background-color: #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }    
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button-link:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/387459024_737673361526881_8739718423896637961_n.png?_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeGeKKjzgYpSeXkEWdqBuqKq2XYSWsteZHDZdhJay15kcON9GMDXLRmd91lGa_T1_IpHxSqzBPibfDZHKUB5zHlr&_nc_ohc=Ya0yufzqIswAX8bHF-p&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQb2Inh5zIFFYp3rhGLhKIN8ypyc2RT8R7LwODzamnStw&oe=654E1097" width="150" lenght="100" style="margin-right: 50px;">
+    <a href="about.html" style="color: rgb(0, 0, 0);">ABOUT US</a>
+    <span style="margin: 0 30px;"></span>
+    <a href="about.html" style="color: black;">HOW IT WORKS</a>
+    <span style="margin: 0 30px;"></span>
+    <a href="about.html" style="color: black;">HELP CENTER</a>
+    <span style="margin: 0 180px;"></span>
+    <a href="about.html" class="button-link">LOG IN</a>
+    <span style="margin: 0 20px;"></span>
+    <a href="about.html" style="color: black;">SIGN UP</a>
+</h1>
+</h1>
+
+    <h2>Welcome Back!</h2>
+    <form action="login.php" method="POST">
+        <label for="username">Email address:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <input type="submit" value="Log me in!">
+        <p><a href="forgot_password.html">Forgot password?</a></p>
+        <p>or log in with Facebook</p>
+        <input type="submit" value="Continue with Facebook">
+        <p>
+            </p>
+        <div class="gray-box">
+        <p>New to FishFund?<a href="Create_account.html" style="color: black;">Create an account</a></p>
+    </div>
+    </form>
+</body>
+</html>
